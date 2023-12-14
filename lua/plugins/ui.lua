@@ -97,7 +97,6 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
-        -- globalstatus = false
         theme = "solarized_dark",
       },
     },
@@ -134,6 +133,8 @@ return {
       })
     end,
   },
+
+  -- Zen mode
   {
     "folke/zen-mode.nvim",
     cmd = "ZenMode",
@@ -146,21 +147,4 @@ return {
     },
     keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen Mode" } },
   },
-  -- {
-  --   "nvimdev/dashboard-nvim",
-  --   even = "nviEnter",
-  --   opts = function(_, opts)
-  --     local logo = [[
-  --     ███╗   ███╗ █████╗ ███╗   ██╗██╗   ██╗    ██████╗ ███████╗██╗   ██╗
-  --     ████╗ ████║██╔══██╗████╗  ██║██║   ██║    ██╔══██╗██╔════╝██║   ██║
-  --     ██╔████╔██║███████║██╔██╗ ██║██║   ██║    ██║  ██║█████╗  ██║   ██║
-  --     ██║╚██╔╝██║██╔══██║██║╚██╗██║██║   ██║    ██║  ██║██╔══╝  ╚██╗ ██╔╝
-  --     ██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝    ██████╔╝███████╗ ╚████╔╝
-  --     ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═════╝ ╚══════╝  ╚═══╝
-  --     ]]
-  --
-  --     logo = string.rep("\n", 8) .. logo .. "\n\n"
-  --     opts.config.header = vim.split(logo, "\n")
-  --   end,
-  -- },
 }

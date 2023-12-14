@@ -11,6 +11,7 @@ return {
         "shfmt",
         "tailwindcss-language-server",
         "typescript-language-server",
+        "python-lsp-server",
         "css-lsp",
       })
     end,
