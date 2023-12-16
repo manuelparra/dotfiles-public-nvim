@@ -85,6 +85,9 @@ return {
       options = {
         mode = "tabs",
         -- separator_style = "slant",
+        indicator = {
+          style = "none",
+        },
         show_buffer_close_icons = false,
         show_close_icon = false,
       },
