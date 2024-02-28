@@ -23,10 +23,6 @@ return {
         "svelte",
       },
 
-      -- matchup = {
-      -- 	enable = true,
-      -- },
-
       -- https://github.com/nvim-treesitter/playground#query-linter
       query_linter = {
         enable = true,
