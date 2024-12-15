@@ -33,7 +33,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = true },
-      ---@type lspconfig.options
+			---@type lspconfig.options
       servers = {
         cssls = {},
         tailwindcss = {
@@ -41,7 +41,7 @@ return {
             return require("lspconfig.util").root_pattern(".git")(...)
           end,
         },
-        tsserver = {
+        ts_ls = {
           root_dir = function(...)
             return require("lspconfig.util").root_pattern(".git")(...)
           end,
@@ -49,11 +49,11 @@ return {
           settings = {
             typescript = {
               inlayHints = {
-                includeInlayParameterNameHints = "literal",
+                includeInlayParameterNameHints = "literals",
                 includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-                includeInlayFunctionParameterTypeHints = false,
+                includeInlayFunctionParameterTypeHints = true,
                 includeInlayVariableTypeHints = false,
-                includeInlayPropertyDeclarationTypeHints = false,
+                includeInlayPropertyDeclarationTypeHints = true,
                 includeInlayFunctionLikeReturnTypeHints = false,
                 includeInlayEnumMemberValueHints = false,
               },
