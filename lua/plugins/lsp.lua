@@ -12,7 +12,6 @@ return {
         "tailwindcss-language-server",
         "typescript-language-server",
         "python-lsp-server",
-        "css-lsp",
       })
     end,
     config = function()
@@ -75,7 +74,6 @@ return {
             },
           },
         },
-        html = {},
         yamlls = {
           settings = {
             yaml = {
