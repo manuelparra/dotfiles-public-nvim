@@ -7,7 +7,6 @@ return {
     styles = {
       floats = "transparent",
       sidebars = "transparent",
-      folders = "transparent",
     },
   }
 }
