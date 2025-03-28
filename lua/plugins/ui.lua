@@ -90,8 +90,19 @@ return {
         },
         show_buffer_close_icons = false,
         show_close_icon = false,
+        buffer_close_icon = '󰅖',
+        modified_icon = '● ',
+        close_icon = ' ',
         left_trunc_marker = ' ',
         right_trunc_marker = ' ',
+        offsets = {
+          {
+            filetype = "NvimTree",
+            text = "File Explorer",
+            highlight = "Directory",
+            separator = true -- use a "true" to enable the default, or set your own character
+          },
+        },
       },
       highlights = {
         fill = {
