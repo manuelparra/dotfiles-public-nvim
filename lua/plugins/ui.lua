@@ -84,12 +84,268 @@ return {
     opts = {
       options = {
         mode = "tabs",
-        -- separator_style = "slant",
+       separator_style = "slant",
         indicator = {
           style = "none",
         },
         show_buffer_close_icons = false,
         show_close_icon = false,
+        left_trunc_marker = ' ',
+        right_trunc_marker = ' ',
+      },
+      highlights = {
+        fill = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        background = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        tab = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        tab_selected = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        tab_separator = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        tab_separator_selected = {
+          fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        tab_close = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        close_button = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        close_button_visible = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        close_button_selected = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        buffer_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        buffer_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          bold = true,
+          italic = true,
+        },
+        numbers = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        numbers_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        numbers_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        diagnostic = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        diagnostic_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        diagnostic_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        hint = {
+          --fg = '#000000',
+          sp = '#000000',
+          bg = '#000000',
+        },
+        hint_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        hint_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        hint_diagnostic = {
+          --fg = '#000000',
+          sp = '#000000',
+          bg = '#000000',
+        },
+        hint_diagnostic_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        hint_diagnostic_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        info = {
+          --fg = '#000000',
+          sp = '#000000',
+          bg = '#000000',
+        },
+        info_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        info_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        info_diagnostic = {
+          --fg = '#000000',
+          sp = '#000000',
+          bg = '#000000',
+        },
+        info_diagnostic_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        info_diagnostic_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        warning = {
+          --fg = '#000000',
+          sp = '#000000',
+          bg = '#000000',
+        },
+        warning_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        warning_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        warning_diagnostic = {
+          --fg = '#000000',
+          sp = '#000000',
+          bg = '#000000',
+        },
+        warning_diagnostic_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        warning_diagnostic_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        error = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        error_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        error_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        error_diagnostic = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        error_diagnostic_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        error_diagnostic_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          sp = '#000000',
+        },
+        modified = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        modified_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        modified_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        duplicate_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+          italic = true,
+        },
+        duplicate_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        duplicate = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        separator_selected = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        separator_visible = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        separator = {
+          fg = '#000000',
+          bg = '#000000',
+        },
+        indicator_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        indicator_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        pick_selected = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        pick_visible = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        pick = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        offset_separator = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
+        trunc_marker = {
+          --fg = '#000000',
+          bg = '#000000',
+        },
       },
     },
   },
