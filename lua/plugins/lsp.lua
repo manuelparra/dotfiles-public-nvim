@@ -11,7 +11,6 @@ return {
         "shfmt",
         "tailwindcss-language-server",
         "typescript-language-server",
-        "python-lsp-server",
       })
     end,
     config = function()
@@ -34,6 +33,50 @@ return {
       inlay_hints = { enabled = true },
 			---@type lspconfig.options
       servers = {
+        -- Configuración para Pyright (sin formateo ni diagnósticos)
+        -- pyright = {
+        --   capabilities = {
+        --     textDocument = {
+        --       formatting = false,  -- Deshabilita formateo
+        --     }
+        --   },
+        --   settings = {
+        --     python = {
+        --       analysis = {
+        --         -- Deshabilita completamente los diagnósticos de Pyright
+        --         --diagnostics = false,
+        --         --typeCheckingMode = "off"
+        --       }
+        --     }
+        --   }
+        -- },
+        --
+        -- -- Configuración para Ruff (solo formateo y diagnósticos)
+        ruff = {
+          on_attach = function(client, bufnr)
+            -- Habilita solo las capacidades deseadas
+            client.server_capabilities = vim.tbl_extend("force",
+              client.server_capabilities, {
+                documentFormattingProvider = true,
+                documentRangeFormattingProvider = true,
+                hoverProvider = true
+              }
+            )
+
+            -- Deshabilita otras capacidades no deseadas
+            client.server_capabilities.diagnosticProvider = false
+            client.server_capabilities.completionProvider = false
+            client.server_capabilities.codeActionProvider = false
+          end,
+          init_options = {
+            settings = {
+              args = {
+                "--line-length=88",
+                "--select=ALL",  -- Habilita todos los checks
+              }
+            }
+          }
+        },
         cssls = {},
         tailwindcss = {
           root_dir = function(...)
