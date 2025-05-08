@@ -1,8 +1,8 @@
 return {
   -- tools
   {
-    "williamboman/mason.nvim",
-    commit = "4da89f3",
+    "mason-org/mason.nvim",
+    version = "^1.0.0",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         "stylua",
