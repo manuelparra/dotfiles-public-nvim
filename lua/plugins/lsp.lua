@@ -26,7 +26,11 @@ return {
       })
     end,
   },
-
+  -- mason-lspconfig
+  {
+    "mason-org/mason-lspconfig.nvim",
+    version = "^1.0.0"
+  },
   -- lsp servers
   {
     "neovim/nvim-lspconfig",
